@@ -66,7 +66,8 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_CMDLINE := \
     mtdoops.fingerprint=$(AOSPA_VERSION) \
-    swinfo.fingerprint=$(AOSPA_VERSION)
+    swinfo.fingerprint=$(AOSPA_VERSION) \
+    allow_file_spec_access
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
