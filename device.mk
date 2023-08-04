@@ -49,6 +49,7 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio.auto.scenario=true \
     persist.vendor.audio.misound.disable=true \
+    ro.audio.monitorRotation=true \
     ro.audio.spatializer_enabled=true \
     ro.config.alarm_vol_steps=15 \
     ro.config.system_vol_steps=15 \
