@@ -134,7 +134,8 @@ PRODUCT_ODM_PROPERTIES += \
     ro.surface_flinger.set_idle_timer_ms=500 \
     ro.surface_flinger.set_touch_timer_ms=1000 \
     vendor.display.disable_3d_adaptive_tm=0 \
-    vendor.display.enable_rounded_corner=0
+    vendor.display.enable_rounded_corner=0 \
+    vendor.display.enable_optimize_refresh=1
 
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.defer_refresh_rate_when_off=1 \
