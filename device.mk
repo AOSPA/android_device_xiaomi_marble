@@ -303,14 +303,17 @@ PRODUCT_PACKAGES += \
     MarbleCNSettingsOverlay \
     MarbleCNSettingsProviderOverlay \
     MarbleCNWifiOverlay \
+    MarbleCNWifiMainlineOverlay \
     MarbleCarrierConfigOverlay \
     MarbleFrameworksOverlay \
     MarbleGLSettingsOverlay \
     MarbleGLSettingsProviderOverlay \
     MarbleGLWifiOverlay \
+    MarbleGLWifiMainlineOverlay \
     MarbleINSettingsOverlay \
     MarbleINSettingsProviderOverlay \
     MarbleINWifiOverlay \
+    MarbleINWifiMainlineOverlay \
     MarbleNfcOverlay \
     MarbleSettingsOverlay \
     MarbleSystemUIOverlay \

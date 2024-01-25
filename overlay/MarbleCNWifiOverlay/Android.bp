@@ -1,4 +1,11 @@
 runtime_resource_overlay {
     name: "MarbleCNWifiOverlay",
-    vendor: true
+    manifest: "AndroidManifest.xml",
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "MarbleCNWifiMainlineOverlay",
+    manifest: "AndroidManifestMainline.xml",
+    vendor: true,
 }
