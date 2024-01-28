@@ -12,7 +12,7 @@ It was originally released in China as Redmi Note 12 Turbo, in March 2023.
 | CPU         | Octa-core (1x2.92 GHz Cortex-X2 & 3x2.5 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510)
 | GPU         | Adreno 725 (580 MHz)
 | Memory      | 8/12 GB LPDDR5 RAM
-| Storage     | 256 GB (UFS 3.1)
+| Storage     | 256/512 GB/1 TB (UFS 3.1)
 | SIM         | Dual SIM (Nano-SIM, dual stand-by)
 | Battery     | 5000 mAh Li-Po (non-removable), 67W fast charge
 | Shipped OS  | Android 13.0 (MIUI 14)
@@ -26,8 +26,10 @@ It was originally released in China as Redmi Note 12 Turbo, in March 2023.
 
 ![POCO F5](https://i02.appmifile.com/173_operator_sg/20/04/2023/27b9038f6166371bea81e9b5aad9a66a.png)
 
+## Copyright
+
 ```
-Copyright (C) 2023 Paranoid Android
+Copyright (C) 2023-24 Paranoid Android
 
 SPDX-License-Identifier: Apache-2.0
 ```
