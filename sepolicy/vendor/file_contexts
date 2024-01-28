@@ -20,10 +20,13 @@
 /vendor/bin/hw/mfp-daemon                                                 u:object_r:hal_fingerprint_default_exec:s0
 
 # Health
-/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.xiaomi               u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.xiaomi  u:object_r:hal_health_default_exec:s0
 
 # IR
 /dev/ir_spi                                                               u:object_r:ir_spi_device:s0
+
+# Init
+/vendor/bin/init\.marble\.perf\.sh                                        u:object_r:vendor_qti_init_shell_exec:s0
 
 # Media
 /vendor/bin/hw/dolbycodec2                                                u:object_r:mediacodec_exec:s0
