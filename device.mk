@@ -267,6 +267,27 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl \
     $(LOCAL_PATH)/configs/keylayout/Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ukee-mtp-snd-card_Button_Jack.kl
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    MiStcImpl \
+    SDM \
+    SDM-histogram \
+    SRE \
+    WifiHAL \
+    cnss-daemon \
+    libcitsensorservice@2.0-impl \
+    libsensor-displayalgo \
+    libsensor-parseRGB \
+    libsensor-ssccalapi \
+    sensors \
+    vendor.qti.hardware.display.composer-service \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_VENDOR_PROPERTIES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=E)
+endif
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
