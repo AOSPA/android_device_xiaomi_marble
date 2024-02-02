@@ -18,13 +18,13 @@ public class DfWrapper {
     private static IDisplayFeature mDisplayFeature;
 
     private static DeathRecipient mDeathRecipient = (cookie) -> {
-        Log.d(TAG, "serviceDied");
+        dlog("serviceDied");
         mDisplayFeature = null;
     };
 
     public static IDisplayFeature getDisplayFeature() {
         if (mDisplayFeature == null) {
-            Log.d(TAG, "getDisplayFeature: mDisplayFeature=null");
+            dlog("getDisplayFeature: mDisplayFeature=null");
             try {
                 mDisplayFeature = IDisplayFeature.getService();
                 mDisplayFeature.asBinder().linkToDeath(mDeathRecipient, 0);
@@ -41,11 +41,17 @@ public class DfWrapper {
             Log.e(TAG, "setDisplayFeatureParams: displayFeature is null!");
             return;
         }
-        Log.d(TAG, "setDisplayFeatureParams: " + params);
+        dlog("setDisplayFeatureParams: " + params);
         try {
             displayFeature.setFeature(0, params.mode, params.value, params.cookie);
         } catch (Exception e) {
             Log.e(TAG, "setDisplayFeatureParams failed!", e);
+        }
+    }
+
+    private static void dlog(String msg) {
+        if (Log.isLoggable(TAG, Log.DEBUG)) {
+            Log.d(TAG, msg);
         }
     }
 

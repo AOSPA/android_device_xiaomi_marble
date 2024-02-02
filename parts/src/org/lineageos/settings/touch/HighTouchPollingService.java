@@ -24,8 +24,6 @@ import org.lineageos.settings.utils.FileUtils;
 public class HighTouchPollingService extends Service {
 
     private static final String TAG = "HighTouchPollingService";
-    private static final boolean DEBUG = true;
-
     private static final String SETTING_KEY = "touch_polling_enabled";
     private static final String TS_NODE = "/sys/devices/platform/goodix_ts.0/goodix_ts_report_rate";
 
@@ -110,7 +108,9 @@ public class HighTouchPollingService extends Service {
     }
 
     private static void dlog(String msg) {
-        if (DEBUG) Log.d(TAG, msg);
+        if (Log.isLoggable(TAG, Log.DEBUG)) {
+            Log.d(TAG, msg);
+        }
     }
     
 }

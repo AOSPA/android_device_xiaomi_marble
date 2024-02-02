@@ -110,12 +110,12 @@ class DolbyAtmos extends AudioEffect {
 
     void resetProfileSpecificSettings() {
         int profile = getProfile();
-        Log.d(TAG, "resetProfileSpecificSettings: profile=" + profile);
+        dlog("resetProfileSpecificSettings: profile=" + profile);
         setIntParam(EFFECT_PARAM_RESET_PROFILE_SETTINGS, profile);
     }
 
     void setDapParameter(int profile, DsParam param, int values[]) {
-        Log.d(TAG, "setDapParameter: profile=" + profile + " param=" + param);
+        dlog("setDapParameter: profile=" + profile + " param=" + param);
         int length = values.length;
         byte[] buf = new byte[(length + 4) * 4];
         int i = int32ToByteArray(EFFECT_PARAM_SET_PROFILE_PARAMETER, buf, 0);
@@ -138,7 +138,7 @@ class DolbyAtmos extends AudioEffect {
     }
 
     int[] getDapParameter(int profile, DsParam param) {
-        Log.d(TAG, "getDapParameter: profile=" + profile + " param=" + param);
+        dlog("getDapParameter: profile=" + profile + " param=" + param);
         int length = param.length;
         byte[] buf = new byte[(length + 2) * 4];
         int i = (param.id << 16) + EFFECT_PARAM_GET_PROFILE_PARAMETER;
@@ -156,5 +156,11 @@ class DolbyAtmos extends AudioEffect {
 
     int getDapParameterInt(DsParam param) {
         return getDapParameter(param)[0];
+    }
+
+    private static void dlog(String msg) {
+        if (Log.isLoggable(TAG, Log.DEBUG)) {
+            Log.d(TAG, msg);
+        }
     }
 }

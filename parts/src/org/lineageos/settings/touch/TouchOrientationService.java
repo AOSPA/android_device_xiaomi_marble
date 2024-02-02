@@ -17,7 +17,6 @@ import android.util.Log;
 public class TouchOrientationService extends Service {
 
     private static final String TAG = "TouchOrientationService";
-    private static final boolean DEBUG = true;
 
     // from kernel drivers/input/touchscreen/xiaomi/xiaomi_touch.h
     private static final int MODE_TOUCH_PANEL_ORIENTATION = 8;
@@ -61,7 +60,9 @@ public class TouchOrientationService extends Service {
     }
 
     private static void dlog(String msg) {
-        if (DEBUG) Log.d(TAG, msg);
+        if (Log.isLoggable(TAG, Log.DEBUG)) {
+            Log.d(TAG, msg);
+        }
     }
 
 }
