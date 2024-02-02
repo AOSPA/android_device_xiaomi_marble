@@ -21,7 +21,7 @@ import java.util.Set;
 
 public class NfcCameraService extends Service {
     private static final String TAG = "NfcCameraService";
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
 
     private static final int MAX_POLLING_PAUSE_TIMEOUT = 40000;
     private static final String FRONT_CAMERA_ID = "1";

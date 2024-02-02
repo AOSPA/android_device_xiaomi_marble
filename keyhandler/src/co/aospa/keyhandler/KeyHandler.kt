@@ -32,7 +32,7 @@ class KeyHandler(
         return when (event.scanCode) {
             KEYCODE_FP_DOUBLE_TAP_FPC,
             KEYCODE_FP_DOUBLE_TAP_GOODIX -> {
-                Log.d(TAG, "fp double tap event: $event")
+                dlog("fp double tap event: $event")
                 fpDoubleTapHandler.handleEvent(event)
                 null
             }
@@ -42,8 +42,12 @@ class KeyHandler(
 
     companion object {
         private const val TAG = "MarbleKeyHandler"
+        private val DEBUG = Log.isLoggable(TAG, Log.DEBUG)
+
         private const val KEYCODE_FP_DOUBLE_TAP_FPC = 106
         private const val KEYCODE_FP_DOUBLE_TAP_GOODIX = 306
+
+        fun dlog(msg: String) = if (DEBUG) Log.d(TAG, msg) else Unit
     }
 
 }

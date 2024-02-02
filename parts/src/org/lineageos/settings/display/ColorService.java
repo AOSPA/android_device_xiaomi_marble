@@ -29,7 +29,7 @@ import org.lineageos.settings.display.DfWrapper.DfParams;
 
 public class ColorService extends Service {
     private static final String TAG = "ColorService";
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
 
     private static final int DEFAULT_COLOR_MODE = SystemProperties.getInt(
             "persist.sys.sf.native_mode", 0);

@@ -45,6 +45,7 @@ public class DolbySettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener, OnMainSwitchChangeListener {
 
     private static final String TAG = "DolbySettingsFragment";
+    private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
 
     private static final AudioAttributes ATTRIBUTES_MEDIA = new AudioAttributes.Builder()
             .setUsage(AudioAttributes.USAGE_MEDIA)
@@ -198,7 +199,7 @@ public class DolbySettingsFragment extends PreferenceFragment implements
                 mAudioManager.getDevicesForAttributes(ATTRIBUTES_MEDIA).get(0);
         final boolean isOnSpeaker = (device.getType() == AudioDeviceInfo.TYPE_BUILTIN_SPEAKER);
         if (mIsOnSpeaker != isOnSpeaker || force) {
-            Log.d(TAG, "updateSpeakerState: " + mIsOnSpeaker);
+            dlog("updateSpeakerState: " + mIsOnSpeaker);
             mIsOnSpeaker = isOnSpeaker;
             updateProfileSpecificPrefs();
         }
@@ -208,7 +209,7 @@ public class DolbySettingsFragment extends PreferenceFragment implements
         final String unknownRes = getActivity().getString(R.string.dolby_unknown);
         final String headphoneRes = getActivity().getString(R.string.dolby_connect_headphones);
 
-        Log.d(TAG, "updateProfileSpecificPrefs: mDsOn=" + mDsOn
+        dlog("updateProfileSpecificPrefs: mDsOn=" + mDsOn
                 + " mCurrentProfile=" + mCurrentProfile + " mIsOnSpeaker=" + mIsOnSpeaker);
 
         final boolean enable = mDsOn && (mCurrentProfile != -1);
@@ -260,5 +261,9 @@ public class DolbySettingsFragment extends PreferenceFragment implements
 
         mBassPref.setChecked(mDolbyUtils.getBassEnhancerEnabled());
         mBassPref.setSummary(null);
+    }
+
+    private static void dlog(String msg) {
+        if (DEBUG) dlog(msg);
     }
 }
