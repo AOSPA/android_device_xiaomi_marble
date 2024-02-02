@@ -14,17 +14,18 @@ import vendor.xiaomi.hw.touchfeature.V1_0.ITouchFeature;
 public class TfWrapper {
 
     private static final String TAG = "TouchFeatureWrapper";
+    private static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
 
     private static ITouchFeature mTouchFeature;
 
     private static DeathRecipient mDeathRecipient = (cookie) -> {
-        Log.d(TAG, "serviceDied");
+        dlog("serviceDied");
         mTouchFeature = null;
     };
 
     public static ITouchFeature getITouchFeature() {
         if (mTouchFeature == null) {
-            Log.d(TAG, "getITouchFeature: mTouchFeature=null");
+            dlog("getITouchFeature: mTouchFeature=null");
             try {
                 mTouchFeature = ITouchFeature.getService();
                 mTouchFeature.asBinder().linkToDeath(mDeathRecipient, 0);
@@ -41,12 +42,16 @@ public class TfWrapper {
             Log.e(TAG, "setModeValue: touchFeature is null!");
             return;
         }
-        Log.d(TAG, "set mode=" + mode + " value=" + value);
+        dlog("set mode=" + mode + " value=" + value);
         try {
             touchFeature.setModeValue(0, mode, value);
         } catch (Exception e) {
             Log.e(TAG, "setModeValue failed!", e);
         }
+    }
+
+    private static void dlog(String msg) {
+        if (DEBUG) dlog(msg);
     }
 
 }
