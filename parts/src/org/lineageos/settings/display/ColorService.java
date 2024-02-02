@@ -28,8 +28,8 @@ import java.util.Map;
 import org.lineageos.settings.display.DfWrapper.DfParams;
 
 public class ColorService extends Service {
+
     private static final String TAG = "ColorService";
-    private static final boolean DEBUG = true;
 
     private static final int DEFAULT_COLOR_MODE = SystemProperties.getInt(
             "persist.sys.sf.native_mode", 0);
@@ -147,6 +147,8 @@ public class ColorService extends Service {
     }
 
     private static void dlog(String msg) {
-        if (DEBUG) Log.d(TAG, msg);
+        if (Log.isLoggable(TAG, Log.DEBUG)) {
+            Log.d(TAG, msg);
+        }
     }
 }

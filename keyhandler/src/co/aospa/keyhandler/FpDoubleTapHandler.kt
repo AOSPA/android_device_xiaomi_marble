@@ -86,7 +86,7 @@ class FpDoubleTapHandler(
         context.registerReceiver(
             object: BroadcastReceiver() {
                 override fun onReceive(context: Context, intent: Intent) {
-                    Log.d(TAG, "onReceive: ${intent.action}")
+                    dlog("onReceive: ${intent.action}")
                     when (intent.action) {
                         Intent.ACTION_SCREEN_OFF -> {
                             handler.removeCallbacks(screenOnRunnable)
@@ -108,10 +108,10 @@ class FpDoubleTapHandler(
         val enabled = isFpDoubleTapEnabled
         val action = fpDoubleTapAction
         val interactive = powerManager.isInteractive() // TODO: support screen off?
-        Log.d(TAG, "handleEvent: enabled=$enabled action=$action"
+        dlog("handleEvent: enabled=$enabled action=$action"
                 + " screenOn=$screenOn interactive=$interactive")
         if (!screenOn || !enabled || !interactive || event.action != KeyEvent.ACTION_UP) {
-            Log.d(TAG, "wont handle")
+            dlog("wont handle")
             return
         }
         when (action) {
@@ -130,15 +130,15 @@ class FpDoubleTapHandler(
     }
 
     private fun takeScreenshot() {
-        Log.d(TAG, "takeScreenshot")
+        dlog("takeScreenshot")
         screenshotHelper.takeScreenshot(SCREENSHOT_VENDOR_GESTURE, handler, null)
     }
 
     private fun launchAssist(eventTime: Long) {
-        Log.d(TAG, "launchAssist: eventTime=$eventTime")
+        dlog("launchAssist: eventTime=$eventTime")
         val searchManager = context.getSystemService(SearchManager::class.java)
         if (searchManager == null) {
-            Log.d(TAG, "launchAssist: searchManager is null!")
+            dlog("launchAssist: searchManager is null!")
             return
         }
         vibrate()
@@ -149,7 +149,7 @@ class FpDoubleTapHandler(
     }
 
     private fun playPauseMedia() {
-        Log.d(TAG, "playPauseMedia")
+        dlog("playPauseMedia")
         vibrate()
         val time = SystemClock.uptimeMillis()
         var event = KeyEvent(time, time, KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE, 0)
@@ -159,12 +159,12 @@ class FpDoubleTapHandler(
     }
 
     private fun showNotifications() {
-        Log.d(TAG, "showNotifications")
+        dlog("showNotifications")
         statusBarManager.expandNotificationsPanel()
     }
 
     private fun launchCamera() {
-        Log.d(TAG, "launchCamera")
+        dlog("launchCamera")
         vibrate()
         context.startActivity(
             Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA)
@@ -173,14 +173,14 @@ class FpDoubleTapHandler(
     }
 
     private fun toggleFlashlight() {
-        Log.d(TAG, "toggleFlashlight: torchOn=$torchOn")
+        dlog("toggleFlashlight: torchOn=$torchOn")
         vibrate()
         cameraManager.setTorchMode(REAR_CAMERA_ID, !torchOn)
     }
 
     private fun toggleRingerMode(ringerMode: Int) {
         val currentMode = audioManager.getRingerModeInternal()
-        Log.d(TAG, "toggleRingerMode: $ringerMode currentMode=$currentMode")
+        dlog("toggleRingerMode: $ringerMode currentMode=$currentMode")
         vibrate()
         audioManager.setRingerModeInternal(
             if (currentMode != ringerMode) ringerMode else AudioManager.RINGER_MODE_NORMAL
@@ -188,12 +188,12 @@ class FpDoubleTapHandler(
     }
 
     private fun showVolumePanel() {
-        Log.d(TAG, "showVolumePanel")
+        dlog("showVolumePanel")
         audioManager.adjustVolume(AudioManager.ADJUST_SAME, AudioManager.FLAG_SHOW_UI)
     }
 
     private fun goToSleep() {
-        Log.d(TAG, "goToSleep")
+        dlog("goToSleep")
         vibrate()
         powerManager.goToSleep(SystemClock.uptimeMillis())
     }
@@ -210,5 +210,11 @@ class FpDoubleTapHandler(
         private const val SETTING_KEY_ENABLE = "fp_double_tap_enable"
         private const val SETTING_KEY_ACTION = "fp_double_tap_action"
         private const val UNLOCK_WAIT_MS = 1500L
+
+        fun dlog(msg: String) {
+            if (Log.isLoggable(TAG, Log.DEBUG)) {
+                Log.d(TAG, msg)
+            }
+        }
     }
 }
