@@ -79,7 +79,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.lmk.nstrat_wmark_boost_factor" Value="4" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
                 <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="96" />
-                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" Target="cape" Ram="8" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" Ram="8" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="vendor.perf.performancemode.support" Value="true" Target="taro,cape,ukee" />
                 <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
