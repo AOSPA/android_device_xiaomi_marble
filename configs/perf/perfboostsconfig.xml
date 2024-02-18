@@ -420,23 +420,23 @@
         <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
 
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="cape" Fps="60"
+            Id="0x00001080" Type="2" Enable="true" Target="taro,cape,ukee" Fps="60"
             Resources="0x4303C000, 0xA6428, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43458000, 0xD2F00, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3, 0x5FC00000, 0" />
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="cape" Fps="90"
+            Id="0x00001080" Type="2" Enable="true" Target="taro,cape,ukee" Fps="90"
             Resources="0x4303C000, 0xA6428, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43458000, 0xD2F00, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3, 0x5FC00000, 0" />
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="cape" Fps="120"
+            Id="0x00001080" Type="2" Enable="true" Target="taro,cape,ukee" Fps="120"
             Resources="0x4303C000, 0xA6428, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43458000, 0xD2F00, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1,
                        0x40CE0200, 0x0023000A, 0x5FC00000, 0" />
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="cape" Fps="144"
+            Id="0x00001080" Type="2" Enable="true" Target="taro,cape,ukee" Fps="144"
             Resources="0x4303C000, 0xA6428, 0x40800000, 1300, 0x40800100, 1100, 0x40800200, 1300,
                        0x40C00000, 0x2, 0x43458000, 0x114900, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1,
