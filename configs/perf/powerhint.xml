@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+/*Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ *       copyright notice, this list of conditions and the following
+ *       disclaimer in the documentation and/or other materials provided
+ *       with the distribution.
+ *     * Neither the name of The Linux Foundation nor the names of its
+ *       contributors may be used to endorse or promote products derived
+ *       from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+-->
+<HintConfigs>
+    <Powerhint>
+        <!--video encode 30 fps-->
+        <Config
+            Id="0x00001203" Enable="true" Target="ukee"
+            Resources="" />
+
+        <!--sustained performance-->
+        <Config
+            Id="0x00001206" Enable="true" Target="ukee"
+            Resources=""/>
+        <!--vr mode-->
+        <Config
+            Id="0x00001207" Enable="true" Target="ukee"
+            Resources=""/>
+
+        <!--vr mode sustained performance-->
+        <Config
+            Id="0x00001301" Enable="true" Target="ukee"
+            Resources=""/>
+
+        <!-- qvr level cpu1 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x0000130A" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+        <!-- qvr level cpu1 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x0000130B" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+        <!-- qvr level cpu1 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x0000130C" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x0000130D" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x0000130E" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x0000130F" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x00001310" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x00001311" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~. 595 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.286 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.921 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.112 Ghz -->
+        <!-- GPU - min pwrlevel 9 (freq 315 Mhz) -->
+        <!-- GPU - max pwrlevel 5 (freq 540 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Indefinite Duration -->
+        <Config
+            Id="0x00001312" Enable="true" Target="ukee" Timeout="0"
+            Resources="0x40800000, 0x386, 0x40804000, 0x82C, 0x40800100, 0x253, 0x40804100, 0x506,
+            0x40800200, 0x399, 0x40804200, 0x840, 0x42804000, 0x9, 0x42808000, 0x5, 0x41000000, 0x3,
+            0x41000200, 0x1"/>
+
+
+        <!--camera ZSLPreview-->
+        <!--CPU-LLC BWMON - Set sample_ms 33-->
+        <!--CPU-LLC BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
+        <!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
+        <!--CPU-LLC-DDR BWMON - Set io_percent 100 -->
+        <!--CPU-LLC-DDR BWMON - Set hyst_length hist memory 0 -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--L CPU - Set hispeed load 99 -->
+        <!--L CPU - max freq 729000 -->
+        <!--B CPU - Disable Core Control -->
+        <!--L CPU - Disable Core Control -->
+        <!--P CPU - Disable Core Control -->
+        <Config
+            Id="0x00001330" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x4183C000, 0x21, 0x41834000, 0x64, 0x43034000, 0x21,
+            0x43020000, 0x64, 0x43024000, 0, 0x41444100, 0, 0x41440100, 0x63, 0x40804100, 0x2D9, 0x41008000, 0, 0x41008100, 0, 0x41008200, 0"/>
+
+
+        <!--camera 30fps-->
+        <!--CPU-LLC BWMON - Set sample_ms 33 -->
+        <!--CPU-LLC BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
+        <!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
+        <!--CPU-LLC-DDR BWMON - Set io_percent 100 -->
+        <!--CPU-LLC-DDR BWMON - Set hyst_length hist memory 0 -->
+        <!--CPU-LLC-DDR BWMON - Set min_freq 547 -->
+        <!--L CPU max freq 1075200 -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--B CPU - Disable schedutil PL -->
+        <!--B CPU - Set hispeed load 99 -->
+        <!--UPMIGRATE - 50 85 -->
+        <!--DOWNMIGRATE - 10 85 -->
+        <!--B CPU - Disable Core Control -->
+        <!--L CPU - Disable Core Control -->
+        <!--P CPU - Disable Core Control -->
+        <Config
+            Id="0x00001331" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x4183C000, 0x21, 0x41834000, 0x64, 0x43034000, 0x21,
+            0x43020000, 0x64, 0x43024000, 0, 0x40804100, 0x433, 0x41444100, 0, 0x41444000, 0, 0x41440000, 0x63,
+            0x40CE0000, 0x0032000A, 0x40CE0200, 0x00550055, 0x41008000, 0, 0x41008100, 0, 0x41008200, 0"/>
+
+        <!--camera 60fps-->
+        <!--CPU-LLC BWMON - Set sample_ms 16 -->
+        <!--CPU-LLC BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
+        <!--CPU-LLC-DDR BWMON - Set sample_ms 16 -->
+        <!--CPU-LLC-DDR BWMON - Set io_percent 100 -->
+        <!--CPU-LLC-DDR BWMON - Set hyst_length hist memory 0 -->
+        <!--CPU-LLC-DDR BWMON - Set min_freq 1555 -->
+        <!--L CPU max freq 1075200 -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--B CPU - Disable schedutil PL -->
+        <!--B CPU - Set hispeed load 99 -->
+        <!--UPMIGRATE - 50 85-->
+        <!--DOWNMIGRATE - 10 85-->
+        <!--B CPU - Disable Core Control -->
+        <!--L CPU - Disable Core Control -->
+        <!--P CPU - Disable Core Control -->
+        <Config
+            Id="0x00001332" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x4183C000, 0x10, 0x41834000, 0x64, 0x43034000, 0x10,
+            0x43020000, 0x64, 0x43024000, 0, 0x40804100, 0x433, 0x41444100, 0, 0x41444000, 0, 0x41440000, 0x63,
+            0x40CE0000, 0x0032000A, 0x40CE0200, 0x00550055, 0x41008000, 0, 0x41008100, 0, 0x41008200, 0"/>
+
+        <!-- camera VIDEO ENCODE HFR -->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0   (0x40800100),1305 -->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0      (0x40800000),1200 -->
+        <!-- MPCTLV3_SCHED_DOWNMIGRATE                (0x40C20000),0x55 -->
+        <!-- MPCTLV3_SCHED_UPMIGRATE                  (0x40C1C000),0x55 -->
+        <!-- MPCTLV3_SCHED_GROUP_DOWNMIGRATE          (0x40C58000),0x55 -->
+        <!-- MPCTLV3_SCHED_GROUP_UPMIGRATE            (0x40C54000),0x55 -->
+        <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS            (0x4183C000),0x0A -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE   (0x41444100),0x01 -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG      (0x41444000),0x01 -->
+        <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG         (0x41440000),0x5F -->
+        <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE      (0x41440100),0x5F -->
+        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE      (0x4143C100),1305 -->
+        <!-- MPCTLV3_MIN_ONLINE_CPU_CLUSTER_BIG                 (0x4143C100),0x02 -->
+        <!-- MPCTLV3_MAX_ONLINE_CPU_CLUSTER_BIG                 (0x41004000),0x03 -->
+        <!-- MPCTLV3_MIN_ONLINE_CPU_CLUSTER_LITTLE              (0x41000100),0x04 -->
+        <!-- MPCTLV3_MAX_ONLINE_CPU_CLUSTER_LITTLE              (0x41004100),0x04 -->
+        <Config
+            Id="0x00001333" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="
+            0x40800100,1305,
+            0x40800000,1200,
+            0x40C20000,0x55,
+            0x40C1C000,0x55,
+            0x40C58000,0x55,
+            0x40C54000,0x55,
+            0x4183C000,0x0A,
+            0x41444100,0x01,
+            0x41444000,0x01,
+            0x41440000,0x5F,
+            0x41440100,0x5F,
+            0x4143C100,1305,
+            0x41004000,0x03,
+            0x41000100,0x04,
+            0x41004100,0x04"/>
+
+        <!--camera VIDEO ENCODE HFR 480FPS -->
+        <!--MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0     (0x40800100),1305 -->
+        <!--MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0        (0x40800000),1440 -->
+        <!--MPCTLV3_SCHED_DOWNMIGRATE                  (0x40C20000),0x55 -->
+        <!--MPCTLV3_SCHED_UPMIGRATE                    (0x40C1C000),0x55 -->
+        <!--MPCTLV3_SCHED_GROUP_DOWNMIGRATE            (0x40C58000),0x55 -->
+        <!--MPCTLV3_SCHED_GROUP_UPMIGRATE              (0x40C54000),0x55 -->
+        <!--MPCTLV3_CPU_LLCC_BW_SAMPLE_MS              (0x4183C000),0x0A -->
+        <!--MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE    (0x41444100),0x01 -->
+        <!--MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG       (0x41444000),0x01 -->
+        <!--MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG          (0x41440000),0x5F -->
+        <!--MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE       (0x41440100),0x5F -->
+        <!--MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE       (0x4143C100),1305 -->
+        <!--MPCTLV3_MIN_ONLINE_CPU_CLUSTER_BIG                  (0x41000000),0x03 -->
+        <!--MPCTLV3_MAX_ONLINE_CPU_CLUSTER_BIG                  (0x41004000),0x03 -->
+        <!--MPCTLV3_MIN_ONLINE_CPU_CLUSTER_LITTLE               (0x41000100),0x04 -->
+        <!--MPCTLV3_MAX_ONLINE_CPU_CLUSTER_LITTLE               (0x41004100),0x04 -->
+        <Config
+            Id="0x00001334" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="
+            0x40800100,1305,
+            0x40800000,1440,
+            0x40C20000,0x55,
+            0x40C1C000,0x55,
+            0x40C58000,0x55,
+            0x40C54000,0x55,
+            0x4183C000,0x0A,
+            0x41444100,0x01,
+            0x41444000,0x01,
+            0x41440000,0x5F,
+            0x41440100,0x5F,
+            0x4143C100,1305,
+            0x41000000,0x03,
+            0x41004000,0x03,
+            0x41000100,0x04,
+            0x41004100,0x04
+            "/>
+
+        <!--camera 8k30-->
+        <!--CPU-LLC BWMON - Set sample_ms 33 -->
+        <!--CPU-LLC BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
+        <!--CPU-LLC-DDR BWMON - Set sample_ms 33 -->
+        <!--CPU-LLC-DDR BWMON - Set io_percent 100 -->
+        <!--CPU-LLC-DDR BWMON - Set hyst_length hist memory 0 -->
+        <!--L CPU max freq 1075200 -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--B CPU - Disable schedutil PL -->
+        <!--B CPU - Set hispeed load 99 -->
+        <!--UPMIGRATE - 40 85-->
+        <!--DOWNMIGRATE - 10 85-->
+        <!--B CPU - Disable Core Control -->
+        <!--L CPU - Disable Core Control -->
+        <!--P CPU - Disable Core Control -->
+        <Config
+            Id="0x00001335" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x4183C000, 0x21, 0x41834000, 0x64, 0x43034000, 0x21,
+            0x43020000, 0x64, 0x43024000, 0, 0x40804100, 0x433, 0x41444100, 0, 0x41444000, 0, 0x41440000, 0x63,
+            0x40CE0000, 0x0028000A, 0x40CE0200, 0x00550055, 0x41008000, 0, 0x41008100, 0, 0x41008200, 0"/>
+
+        <!--camera VIDEO ENCODE MULTICAMERA -->
+        <Config
+            Id="0x00001336" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources=""/>
+
+        <!-- camera open tunings-->
+        <!-- MPCTLV3_ALL_CPUS_PWR_CLPS_DIS+1, (0x40400000+1),0x1 -->
+        <!-- MPCTLV3_SCHED_BOOST, 0x1 -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xFFF -->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xFFF -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 0xFFF -->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0xFFF -->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 0xFFF -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 0xFFF -->
+        <!-- MPCTLV3_SCHED_CPUSET_SYSTEM_BACKGROUND, 0x7 -->
+        <!-- MPCTLV3_SCHED_CPUSET_TOP_APP,           0xF8 -->
+        <Config
+            Id="0x00001337" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x40400001, 0x1, 0x40C00000, 0x1, 0x40804000, 0XFFF, 0x40800000, 0XFFF,
+            0x40804100, 0XFFF, 0x40800100, 0XFFF, 0x40800200, 0XFFF, 0x40804200, 0XFFF,
+            0x40C44000, 0x7, 0x40C3C000, 0xF8"/>
+
+         <!-- camera close tunings-->
+         <!-- MPCTLV3_ALL_CPUS_PWR_CLPS_DIS+1, (0x40400000+1),0x1 -->
+         <!-- MPCTLV3_SCHED_BOOST, 0x1 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xFFF -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xFFF -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 0xFFF -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0xFFF -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 0xFFF -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 0xFFF -->
+         <!-- MPCTLV3_SCHED_CPUSET_SYSTEM_BACKGROUND, 0x7 -->
+         <!-- MPCTLV3_SCHED_CPUSET_TOP_APP,           0xF8 -->
+         <Config
+            Id="0x00001338" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x40400001, 0x1, 0x40C00000, 0x1, 0x40804000, 0XFFF, 0x40800000, 0XFFF,
+            0x40804100, 0XFFF, 0x40800100, 0XFFF, 0x40800200, 0XFFF, 0x40804200, 0XFFF,
+            0x40C44000, 0x7, 0x40C3C000, 0xF8"/>
+
+         <!-- camera snapshot tunings-->
+         <!-- MPCTLV3_ALL_CPUS_PWR_CLPS_DIS + 1       (0x40400000 + 1),0x1-->
+         <!-- MPCTLV3_SCHED_BOOST                     (0x40C00000),0x1 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0     (0x40804000),0xFFF -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0     (0x40800000),0xFFF -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0  (0x40804100),0xFFF -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0  (0x40800100),0xFFF -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0    (0x40800200),0xFFF -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0    (0x40804200),0xFFF -->
+         <!-- MPCTLV3_MAX_ONLINE_CPU_CLUSTER_LITTLE   (0x41004100),0x4-->
+         <!-- MPCTLV3_MAX_ONLINE_CPU_CLUSTER_BIG      (0x41004000),0x3 -->
+         <!-- MPCTLV3_MAX_ONLINE_CPU_CLUSTER_PRIME    (0x41004200),0x1 -->
+         <!-- MPCTLV3_XIAOMI_KSWAPD_AFFINITY          (0x5FC00000),0   -->
+         <Config
+            Id="0x00001339" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+             0x40400001,0x1,
+             0x40C00000,0x1,
+             0x40804000,0xFFF,
+             0x40800000,0xFFF,
+             0x40804100,0xFFF,
+             0x40800100,0xFFF,
+             0x40800200,0xFFF,
+             0x40804200,0xFFF,
+             0x41004100,0x4,
+             0x41004000,0x3,
+             0x41004200,0x1,
+             0x5FC00000,0
+             "/>
+
+         <!-- camera START PREVIEW tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0             (0x40804200),1881  -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   -->
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001340" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x40804200,1881,
+            0x43048000,0,
+            0x4184C000,0,
+            0x41440100,99,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera START PREVIEW THERMAL tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0             (0x40804200),1881  -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   -->
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001341" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x40804200,1881,
+            0x43048000,0,
+            0x4184C000,0,
+            0x41440100,99,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera BOKEH PREVIEW  tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0               (0x40804000),1651 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0             (0x40804200),1881  -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   -->
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001342" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x40804000,1651,
+            0x40804200,1881,
+            0x43048000,0,
+            0x4184C000,0,
+            0x41440100,99,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera VLOG PREVIEW tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0             (0x40804200),1881  -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   -->
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001343" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x40804200,1881,
+            0x43048000,0,
+            0x4184C000,0,
+            0x41440100,99,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera SAT PREVIEW tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0               (0x40804000),1651 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0             (0x40804200),1881  -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   -->
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0   -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001344" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x40804000,1651,
+            0x40804200,1881,
+            0x43048000,0,
+            0x4184C000,0,
+            0x41440100,99,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera SAT ZOOM tunings-->
+         <!-- MPCTLV3_ALL_CPUS_PWR_CLPS_DIS + 1       (0x40400000 + 1),0x1-->
+         <!-- MPCTLV3_SCHED_BOOST                     (0x40C00000),0x1    -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0     (0x40804000),2342   -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0     (0x40800000),2342   -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0  (0x40804100),1363   -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0  (0x40800100),1363   -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0    (0x40800200),2630   -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0    (0x40804200),2630   -->
+         <!-- MPCTLV3_MAX_ONLINE_CPU_CLUSTER_LITTLE   (0x41004100),0x4    -->
+         <!-- MPCTLV3_MAX_ONLINE_CPU_CLUSTER_BIG      (0x41004000),0x3    -->
+         <!-- MPCTLV3_MAX_ONLINE_CPU_CLUSTER_PRIME    (0x41004200),0x1    -->
+          <Config
+            Id="0x00001345" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+             0x40400001,0x1,
+             0x40C00000,0x1,
+             0x40804000,2342,
+             0x40800000,2342,
+             0x40804100,1363,
+             0x40800100,1363,
+             0x40800200,2630,
+             0x40804200,2630,
+             0x41004100,0x4,
+             0x41004000,0x3,
+             0x41004200,0x1
+             "/>
+
+         <!-- camera HD 30FPS RECORDING tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001346" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera FHD 30FPS RECORDING tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001347" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera UHD 30FPS RECORDING tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001348" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera 8kUHD 30FPS RECORDING tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001349" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera START PREVIEW FRONT  tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0               (0x40804000),1651 -->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0             (0x40804200),1881  -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   -->
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001350" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x40804000,1651,
+            0x40804200,1881,
+            0x43048000,0,
+            0x4184C000,0,
+            0x41440100,99,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera START PREVIEW TP FRONT  tunings-->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001351" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x43048000,0,
+            0x4184C000,0,
+            0x41440100,99,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera FRONT FHD 30FPS RECORDING tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001352" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera SUPEREIS FHD 30FPS RECORDING tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001353" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera FHD 60FPS RECORDING  tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001354" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera UHD 60FPS RECORDING tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0               (0x40800000),1113 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT                      (0x43024000),0x00 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0x01 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),30   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),40   -->
+         <!-- MPCTLV3_SCHED_PREFER_SPREAD                       (0x40CA8000),0x00 -->
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32 -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50 -->
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0    -->
+         <Config
+            Id="0x00001355" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x40800000,1113,
+            0x43024000,0x00,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43438000,0x1,
+            0x40C20000,30,
+            0x40C1C000,40,
+            0x40CA8000,0x0,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0x0,
+            0x41008000,0x0,
+            0x41008100,0x0,
+            0x41008200,0x0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera FRONT FHD 60FPS RECORDING tunings-->
+	 <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1056-->
+	 <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0               (0x40800000),1555-->
+         <!-- MPCTLV3_CPU_LLCC_BW_HIST_MEMORY_8450              (0x41854000),0   -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_LENGTH_8450              (0x41858000),0   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HIST_MEMORY_8450              (0x43050000),0   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_LENGTH_8450              (0x43054000),0   -->
+         <!-- MPCTLV3_UP_RATE_LIMIT_US_LITTLE                   (0x41458100),1056000   -->
+         <!-- MPCTLV3_UP_RATE_LIMIT_US_BIG                      (0x41458000),1555200   -->
+         <!-- MPCTLV3_UP_RATE_LIMIT_US_PRIME                    (0x41458200),1536000   -->
+         <!-- MPCTLV3_WALT_UP_RATE_LIMIT_US_8450                (0x40810000),33000 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE     (0x41440100),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0x1 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0x1 -->
+         <!-- MPCTLV3_SCHED_UP_DOWNMIGRATE                      (0x40CE0000),20 10  -->
+         <!-- MPCTLV3_SCHED_UP_DOWNMIGRATE_PRIME                (0x40CE0200),25 15  -->
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <!-- MPCTLV3_SCHED_PREFER_SPREAD                       (0x40CA8000),0x1 -->
+         <Config
+            Id="0x00001356" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1056,
+            0x40800000,1555,
+            0x41854000,0,
+            0x41858000,0,
+            0x43050000,0,
+            0x43054000,0,
+            0x41458100,1056000,
+            0x41458000,1555200,
+            0x41458200,1536000,
+            0x40810000,33000,
+            0x41440000,99,
+            0x41440100,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x43420000,0xc8,
+            0x43424000,0x1,
+            0x43434000,0xc8,
+            0x43438000,0x1,
+            0x40CE0000,0x0014000A,
+            0x40CE0200,0x0019000F,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0,
+            0x40CA8000,0x4
+            "/>
+
+         <!-- camera HD 30FPS BEAUTY EIS RECORDING  tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001357" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- camera THIRD PART REAR tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0            (0x40804100),1075 -->
+         <!-- MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_BIG        (0x41440000),99   -->
+         <!-- MPCTLV3_LLCC_DDR_BW_HYST_OPT_8450                 (0x43048000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_HYST_OPT_8450                 (0x4184C000),0    -->
+         <!-- MPCTLV3_CPU_LLCC_BW_SAMPLE_MS                     (0x4183C000),0x21 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_SAMPLE_MS                     (0x43034000),0x21 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_POLLING_INTERVAL              (0x41840000),0x32 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_POLLING_INTERVAL              (0x43030000),0x32 -->
+         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT                    (0x41834000),0x64 -->
+         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT                    (0x43020000),0x64 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_0                  (0x43420000),0xC8 -->
+         <!-- MPCTLV3_LLCC_MEMLAT_RATIO_CELL_1                  (0x43424000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_0                 (0x43434000),0xC8 -->
+         <!-- MPCTLV3_LLCC_DDR_LAT_RATIO_CELL_1                 (0x43438000),0xC8 -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE                         (0x40C20000),10  -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE                           (0x40C1C000),15  -->
+         <!-- MPCTLV3_SCHED_DOWNMIGRATE_PRIME                   (0x40C20200),75   -->
+         <!-- MPCTLV3_SCHED_UPMIGRATE_PRIME                     (0x40C1C200),85   --> 
+         <!-- MPCTLV3_SCHED_WINDOW_TICKS_UPDATE                 (0x40CA4000),0x5  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION        (0x40C78000),0x32  -->
+         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST             (0x40C7C000),0x50  -->         
+         <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK             (0x40C74000),0    -->   
+         <!-- MPCTLV3_CORE_CTL_ENABLE_BIG                       (0x41008000),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_LITTLE                    (0x41008100),0    -->
+         <!-- MPCTLV3_CORE_CTL_ENABLE_PRIME                     (0x41008200),0    -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE  (0x41444100),0  -->
+         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG     (0x41444000),0  -->
+         <Config
+            Id="0x00001358" Type="0" Enable="true" Timeout="0" Target="ukee"
+             Resources="
+            0x40804100,1075,
+            0x41440000,99,
+            0x43048000,0,
+            0x4184C000,0,
+            0x4183C000,0x21,
+            0x43034000,0x21,
+            0x41840000,0x32,
+            0x43030000,0x32,
+            0x41834000,0x64,
+            0x43020000,0x64,
+            0x43420000,0xc8,
+            0x43424000,0xc8,
+            0x43434000,0xc8,
+            0x43438000,0xc8,
+            0x40C20000,10,
+            0x40C1C000,15,
+            0x40c20200,75,
+            0x40c1c200,85,
+            0x40CA4000,0x5,
+            0x40C78000,0x32,
+            0x40C7C000,0x50,
+            0x40C74000,0,
+            0x41008000,0,
+            0x41008100,0,
+            0x41008200,0,
+            0x41444100,0x0,
+            0x41444000,0x0
+            "/>
+
+         <!-- decode open camera kswapd tunings-->
+         <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0  (0x40804100),0xFFF -->
+         <!-- MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0  (0x40800100),0xFFF -->
+         <!-- MPCTLV3_XIAOMI_KSWAPD_AFFINITY          (0x5FC00000),0     -->
+         <Config
+            Id="0X00001360" Type="0" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x40804100, 0XFFF, 0x40800100, 0XFFF, 0x5FC00000, 0"/>
+
+        <!-- decode 240 fps tunings-->
+        <!--L CPU - max freq 700000 -->
+         <Config
+            Id="0X00001505" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x40804100, 0x2BC"/>
+
+        <!-- video decode 30 fps non secure content tunings-->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0XA -->
+         <Config
+            Id="0X00001502" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x40800000, 0XA"/>
+
+        <!-- video decode 30 fps secure content tunings-->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0XA -->
+         <Config
+            Id="0X00001504" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x40800000, 0XA"/>
+
+    </Powerhint>
+</HintConfigs>
