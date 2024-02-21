@@ -1590,5 +1590,11 @@
             Id="0X00001504" Enable="true" Timeout="0" Target="ukee"
             Resources="0x40800000, 0XA"/>
 
+        <!-- Expensive Rendering -->
+        <!-- GPU MIN_FREQUENCY resource opcode,value -->
+        <Config
+            Id="0x000010A5" Enable="true" Timeout="0" Target="ukee"
+            Resources="0x42804000, 3"/>
+
     </Powerhint>
 </HintConfigs>

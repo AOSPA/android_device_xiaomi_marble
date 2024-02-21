@@ -65,6 +65,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.vendor.perf.lgl" Value="false" Target="diwali" SkewType="10"/>
                 <Prop Name="vendor.perf.enable_gplaf_hw" Value="false" Target="diwali" />
                 <Prop Name="ro.vendor.perf.dplh" Value="false" Target="diwali" />
+                <Prop Name="vendor.perf.expensive_rendering" Value="1" Target="ukee" />
 
                 <!--System Properties -->
                 <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
