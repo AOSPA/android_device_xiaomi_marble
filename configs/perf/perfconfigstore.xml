@@ -45,7 +45,7 @@ ________________________________________________________________________________
                 <Prop Name="vendor.iop.enable_speed" Value="true" />
                 <Prop Name="vendor.perf.test_avc" Value="false" />
                 <Prop Name="vendor.perf.fps_switch_hyst_time_secs" Value="10" />
-                <Prop Name="ro.vendor.perf.enable.prekill"        Value="false"     />
+                <Prop Name="ro.vendor.perf.enable.prekill"        Value="true"     />
                 <Prop Name="vendor.debug.enable.memperfd"         Value="true"     />
                 <Prop Name="vendor.enable.memperfd_MIN_RAM_in_KB" Value="1048576"  />
                 <Prop Name="vendor.enable.memperfd_MAX_RAM_in_KB" Value="12582912" />
@@ -84,7 +84,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="vendor.perf.performancemode.support" Value="true" Target="taro,cape,ukee" />
                 <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
-                <Prop Name="vendor.appcompact.enable_app_compact" Value="false" />
+                <Prop Name="vendor.appcompact.enable_app_compact" Value="true" />
                 <Prop Name="vendor.appcompact.full_compact_type" Value="2" />
                 <Prop Name="vendor.appcompact.some_compact_type" Value="4" />
                 <Prop Name="vendor.appcompact.compact_throttle_somesome" Value="5000" />
