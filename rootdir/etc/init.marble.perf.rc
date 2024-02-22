@@ -14,7 +14,7 @@ on property:vendor.post_boot.parsed=1
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.marble.perf.sh
 
     # Configure CPU input boost
-    write /proc/sys/walt/input_boost/input_boost_freq "1324800 0 0 0 0 0 0 0"
+    write /proc/sys/walt/input_boost/input_boost_freq "1324800 0 0 0 1113600 0 0 0"
     write /proc/sys/walt/input_boost/powerkey_input_boost_freq "1785600 0 0 0 2169600 0 0 2419200"
     write /proc/sys/walt/input_boost/powerkey_input_boost_ms 500
 
