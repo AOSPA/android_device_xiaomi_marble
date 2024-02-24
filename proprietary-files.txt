@@ -1502,7 +1502,6 @@ vendor/lib64/soundfx/libswvqe.so|b057f8a65f94d3009e77cd4c6cebf5a9554c43e0
 vendor/lib64/libvmmem.so
 
 # Mlipay
-vendor/app/IFAAService/IFAAService.apk
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml

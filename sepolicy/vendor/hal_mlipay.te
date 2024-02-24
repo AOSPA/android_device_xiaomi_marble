@@ -13,6 +13,7 @@ binder_call(hal_mlipay_client, hal_mlipay_server)
 binder_call(hal_mlipay_server, hal_mlipay_client)
 
 hal_client_domain(platform_app, hal_mlipay)
+hal_client_domain(system_app, hal_mlipay)
 
 allow hal_mlipay_default {
     tee_device

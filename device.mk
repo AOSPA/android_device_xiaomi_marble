@@ -303,6 +303,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
 
+# Mlipay
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # NDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
