@@ -16,12 +16,12 @@ runtime_resource_overlay {
     name: "MarbleWifiOverlay",
     sdk_version: "current",
     manifest: "AndroidManifest.xml",
-    vendor: true,
+    device_specific: true,
 }
 
 runtime_resource_overlay {
     name: "MarbleWifiMainlineOverlay",
     sdk_version: "current",
     manifest: "AndroidManifestMainline.xml",
-    vendor: true,
+    device_specific: true,
 }

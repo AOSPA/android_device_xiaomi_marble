@@ -112,6 +112,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Cutout
+PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay \
+    NoCutoutOverlay
+
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_hide_display_cutout=true
 
@@ -323,7 +327,6 @@ PRODUCT_PACKAGES += \
     AOSPAMarbleFrameworksOverlay \
     AOSPAMarbleSettingsOverlay \
     AOSPAMarbleSystemUIOverlay \
-    AvoidAppsInCutoutOverlay \
     MarbleApertureOverlay \
     MarbleCNSettingsOverlay \
     MarbleCNSettingsProviderOverlay \
@@ -343,8 +346,7 @@ PRODUCT_PACKAGES += \
     MarbleSettingsOverlay \
     MarbleSystemUIOverlay \
     MarbleWifiOverlay \
-    MarbleWifiMainlineOverlay \
-    NoCutoutOverlay
+    MarbleWifiMainlineOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

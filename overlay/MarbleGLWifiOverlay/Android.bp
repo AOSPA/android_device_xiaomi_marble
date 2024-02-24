@@ -1,11 +1,11 @@
 runtime_resource_overlay {
     name: "MarbleGLWifiOverlay",
     manifest: "AndroidManifest.xml",
-    vendor: true,
+    device_specific: true,
 }
 
 runtime_resource_overlay {
     name: "MarbleGLWifiMainlineOverlay",
     manifest: "AndroidManifestMainline.xml",
-    vendor: true,
+    device_specific: true,
 }

@@ -15,5 +15,5 @@
 runtime_resource_overlay {
     name: "MarbleSettingsOverlay",
     sdk_version: "current",
-    vendor: true,
+    device_specific: true,
 }
