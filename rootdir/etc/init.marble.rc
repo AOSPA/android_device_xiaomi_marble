@@ -58,6 +58,12 @@ on post-fs-data
     # qrtr-lookup
     mkdir /data/vendor/qrtr 0775 system system
 
+service init-marble-sh /vendor/bin/init.marble.sh
+    class main
+    user system
+    group system
+    oneshot
+
 service batterysecret /vendor/bin/batterysecret
     class last_start
     user root

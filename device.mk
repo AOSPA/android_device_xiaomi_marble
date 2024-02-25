@@ -343,6 +343,7 @@ PRODUCT_PACKAGES += \
     MarbleINWifiOverlay \
     MarbleINWifiMainlineOverlay \
     MarbleNfcOverlay \
+    MarblePBSystemUIOverlay \
     MarbleSettingsOverlay \
     MarbleSystemUIOverlay \
     MarbleWifiOverlay \

@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2024 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "MarblePBSystemUIOverlay",
+    sdk_version: "current",
+    device_specific: true,
+}
