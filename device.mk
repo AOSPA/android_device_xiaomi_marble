@@ -136,8 +136,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_ODM_PROPERTIES += \
     persist.sys.sf.color_mode=0 \
     ro.surface_flinger.enable_frame_rate_override=false \
-    ro.surface_flinger.set_idle_timer_ms=500 \
-    ro.surface_flinger.set_touch_timer_ms=1000 \
+    ro.surface_flinger.set_idle_timer_ms=1100 \
+    ro.surface_flinger.set_touch_timer_ms=200 \
     vendor.display.disable_3d_adaptive_tm=0 \
     vendor.display.enable_rounded_corner=0
 
