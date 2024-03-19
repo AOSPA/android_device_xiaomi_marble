@@ -109,9 +109,9 @@ on fs
     mkdir /mnt/vendor/persist/qca6490/ 0700 system system
     chmod 0666 /dev/xlog
 
-on post-fs
+#on post-fs
     # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
+    #setrlimit 8 67108864 67108864
 
 on late-fs
     wait_for_prop hwservicemanager.ready true
