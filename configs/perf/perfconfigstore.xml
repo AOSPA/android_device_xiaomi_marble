@@ -71,9 +71,8 @@ ________________________________________________________________________________
                 <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
                 <Prop Name="ro.lmk.kill_timeout_ms_dup" Value="100" />
                 <Prop Name="ro.lmk.thrashing_threshold" Value="30" />
-                <Prop Name="ro.lmk.thrashing_decay" Value="2" />
-                <Prop Name="ro.lmk.thrashing_limit_pct_dup" Value="30" />
-                <Prop Name="ro.lmk.nstrat_low_swap" Value="30" />
+                <Prop Name="ro.lmk.thrashing_decay" Value="5" />
+                <Prop Name="ro.lmk.nstrat_low_swap" Value="10" />
                 <Prop Name="ro.lmk.nstrat_psi_partial_ms" Value="70" />
                 <Prop Name="ro.lmk.nstrat_psi_complete_ms" Value="70" />
                 <Prop Name="ro.lmk.psi_scrit_complete_stall_ms" Value="400" />
