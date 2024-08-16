@@ -18,5 +18,6 @@
 
     <overlay
         android:isStatic="true"
-        android:targetPackage="com.android.nfc" />
+        android:targetPackage="com.android.nfc"
+        android:targetName="NfcCustomization" />
 </manifest>
