@@ -1071,7 +1071,6 @@ product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayc
 vendor/etc/snapdragon_color_libs_config.xml
 
 # Fingerprint
-odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 vendor/bin/hw/mfp-daemon
 vendor/etc/init/init.mfp-daemon.rc
 vendor/etc/vintf/manifest/AHBF@2.1-service.xml

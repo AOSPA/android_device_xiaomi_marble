@@ -26,7 +26,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 TARGET_USES_MFP_DAEMON := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
 
 # Firmware
 $(call inherit-product-if-exists, vendor/xiaomi/firmware/marble/config.mk)
