@@ -15,6 +15,7 @@ static const variant_info_t marble = {
     .device = "marble",
     .model = "23049RAD8C",
     .name = "marble",
+    .mod_device = "marble",
     .marketname = "Redmi Note 12 Turbo",
 };
 
@@ -24,6 +25,7 @@ static const variant_info_t marble_global = {
     .device = "marble",
     .model = "23049PCD8G",
     .name = "marble_global",
+    .mod_device = "marble_global",
     .marketname = "POCO F5",
 };
 
@@ -33,6 +35,7 @@ static const variant_info_t marble_in = {
     .device = "marblein",
     .model = "23049PCD8I",
     .name = "marblein",
+    .mod_device = "marble_in_global",
     .marketname = "POCO F5",
 };
 
