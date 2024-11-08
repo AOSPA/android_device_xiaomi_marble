@@ -1097,6 +1097,11 @@ vendor/firmware/gmu_gen70000.bin
 vendor/etc/dolby_vision.cfg
 vendor/etc/dolby/dax-default.xml
 
+# NFC
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+
 # Sensors config
 vendor/etc/sensors/config/lightSensorConfig.json
 vendor/etc/sensors/config/lsm6dso_0.json
