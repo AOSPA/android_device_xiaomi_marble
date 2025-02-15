@@ -1,4 +1,4 @@
-# Device proprietary files - from marble OS1.0.14.0.UMRCNXM package, unless pinned
+# Device proprietary files - from marble OS1.0.17.0.UMRCNXM package, unless pinned
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
@@ -1100,6 +1100,10 @@ vendor/etc/dolby/dax-default.xml
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+
+# Sensors
+vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
+vendor/lib64/libssccalapi@2.0.so
 
 # Sensors config
 vendor/etc/sensors/config/lightSensorConfig.json
