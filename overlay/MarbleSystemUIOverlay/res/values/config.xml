@@ -31,4 +31,8 @@
     <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">@dimen/physical_power_button_center_screen_location_y</dimen>
 
+    <!-- Whether to briefly keep the display in ON state when transitioning from
+         DOZE_AOD_PAUSED to DOZE_AOD state. -->
+    <bool name="config_displayTurnsOnWhenResumingAod">true</bool>
+
 </resources>
