@@ -1066,7 +1066,9 @@ vendor/etc/mi_gc_2.txt
 vendor/etc/mi_gc_3.txt
 
 # Display configs
+product/etc/displayconfig/display_id_4630946370515662722.xml:vendor/etc/displayconfig/display_id_4630946370515662721.xml
 product/etc/displayconfig/display_id_4630946370515662722.xml:vendor/etc/displayconfig/display_id_4630946370515662722.xml
+product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayconfig/display_id_4630946480857061761.xml
 product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayconfig/display_id_4630946480857061762.xml
 vendor/etc/snapdragon_color_libs_config.xml
 
