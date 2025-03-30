@@ -14,6 +14,9 @@ include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_BOOTLOADER_BOARD_NAME := marble
 
+# Firmware
+-include vendor/xiaomi/marble-firmware/config.mk
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_marble
 TARGET_RECOVERY_DEVICE_MODULES := libinit_marble

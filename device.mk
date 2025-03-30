@@ -29,9 +29,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
 
-# Firmware
-$(call inherit-product-if-exists, vendor/xiaomi/firmware/marble/config.mk)
-
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.marble.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.marble.sh \
