@@ -111,20 +111,19 @@ vendor/lib64/libmcs.so
 vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libsndcardparser.so
+vendor/lib64/libxlog.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Audio HAL
-vendor/lib64/hw/audio.primary.taro.so
+vendor/lib64/hw/audio.primary.taro.so;MODULE_SUFFIX=_xiaomi;OVERRIDES=audio.primary.taro
 vendor/lib64/hw/gyro_fusion_interface.so
+vendor/lib64/hw/sound_trigger.primary.taro.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudioroute_ext.so
 vendor/lib64/libmmhardware.so
 vendor/lib64/libresampler.so
-vendor/lib64/libxlog.so
 
 # Audio calibration
 vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb
@@ -155,6 +154,15 @@ vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
 vendor/etc/usecaseKvManager.xml
+
+# Audio effects
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libmisoundfx.so
+vendor/lib64/soundfx/libqcompostprocbundle.so
+vendor/lib64/soundfx/libqcomvisualizer.so
+vendor/lib64/soundfx/libqcomvoiceprocessing.so
+vendor/lib64/soundfx/libshoebox.so
+vendor/lib64/soundfx/libvolumelistener.so
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
@@ -238,19 +246,19 @@ vendor/lib64/libMiMotion.so
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libQnnHtpAltPrepV69Stub.so
 vendor/lib64/libSNPE.so
-vendor/lib64/libSnpeDspV65Stub.so
-vendor/lib64/libSnpeDspV66Stub.so
-vendor/lib64/libSnpeHta.so
+vendor/lib64/libSnpeDspV65Stub.so;FIX_SONAME
+vendor/lib64/libSnpeDspV66Stub.so;FIX_SONAME
+vendor/lib64/libSnpeHta.so;FIX_SONAME
 vendor/lib64/libSnpeHtpPrepare.so
 vendor/lib64/libSnpeHtpV68Stub.so
 vendor/lib64/libSnpeHtpV69Stub.so
 vendor/lib64/libSnpeHtpV73Stub.so
-vendor/lib64/libTrueSight.so
+vendor/lib64/libTrueSight.so;DISABLE_CHECKELF
 vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so
-vendor/lib64/libalhLDC.so
+vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
@@ -307,7 +315,6 @@ vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libipebpsstriping480.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
-vendor/lib64/libmemunreachable.so
 vendor/lib64/libmfGhostDetection.so
 vendor/lib64/libmi_supernight_raw_checker.so
 vendor/lib64/libmiai_deblur.so
@@ -991,16 +998,16 @@ vendor/bin/batterysecret
 vendor/etc/init/hw/init.batterysecret.rc
 
 # Display
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_CHECKELF
 vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
+vendor/lib64/libsdedrm.so;MODULE_SUFFIX=_xiaomi;OVERRIDES=libsdedrm
+vendor/lib64/libsdm-disp-vndapis.so;MODULE_SUFFIX=_xiaomi;OVERRIDES=libsdm-disp-vndapis
+vendor/lib64/libsdmcore.so;MODULE_SUFFIX=_xiaomi;OVERRIDES=libsdmcore
+vendor/lib64/libsdmextension.so;MODULE_SUFFIX=_xiaomi;OVERRIDES=libsdmextension
+vendor/lib64/libsdmutils.so;MODULE_SUFFIX=_xiaomi;OVERRIDES=libsdmutils
 
 # Displayfeature
 odm/lib64/libhdrmode.so
@@ -1030,7 +1037,7 @@ vendor/lib64/libsdr2hdr.so
 vendor/lib64/libsre.so
 vendor/lib64/libtruetone.so
 vendor/lib64/libvideomode.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display calibration
 vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json
@@ -1077,7 +1084,6 @@ vendor/lib64/hw/fingerprint.goodix.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 
 # GPU firmware
 vendor/firmware/a730_sqe.fw
@@ -1102,6 +1108,7 @@ vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/bin/nv_mac
 
 # Sensors
+vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
 vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
 vendor/lib64/libssccalapi@2.0.so
 
