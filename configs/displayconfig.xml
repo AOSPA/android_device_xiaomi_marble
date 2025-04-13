@@ -63,5 +63,17 @@
             </refreshRateRange>
         </refreshRateThrottlingPoint>
     </thermalThrottling>
+    <!-- Screen-off light sensor -->
+    <screenOffBrightnessSensor>
+        <type>xiaomi.sensor.aod</type>
+    </screenOffBrightnessSensor>
+    <screenOffBrightnessSensorValueToLux>
+        <item>-1</item> <!-- 0: NA -->
+        <item>-1</item> <!-- 1: NA -->
+        <item>-1</item> <!-- 2: NA -->
+        <item>0</item>  <!-- 3: NIGHT -->
+        <item>80</item> <!-- 4: HIGH -->
+        <item>5</item>  <!-- 5: LOW -->
+    </screenOffBrightnessSensorValueToLux>
 </displayConfiguration>
 <!-- END Adapt_MIUIAdaptFrame-->
