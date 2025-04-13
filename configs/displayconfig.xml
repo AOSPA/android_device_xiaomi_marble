@@ -36,7 +36,7 @@
         <!-- Thermal limitation for HBM -->
         <thermalStatusLimit>critical</thermalStatusLimit>
         <!-- Low power mode limitation for HBM -->
-        <allowInLowPowerMode>true</allowInLowPowerMode>
+        <allowInLowPowerMode>false</allowInLowPowerMode>
         <minimumHdrPercentOfScreen>0</minimumHdrPercentOfScreen>
         <sdrHdrRatioMap>
             <point>
