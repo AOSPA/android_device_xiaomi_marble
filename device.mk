@@ -16,6 +16,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Display / Graphics
+PRODUCT_COPY_FILES += \
+$(foreach did, 4630946370515662721 4630946370515662722 4630946480857061761 4630946480857061762, \
+    $(LOCAL_PATH)/configs/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_$(did).xml)
+
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.defer_refresh_rate_when_off=1 \
     vendor.display.enable_fp_monitor=1 \
