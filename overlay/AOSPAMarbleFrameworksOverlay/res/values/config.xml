@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Build fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.2.0.UMRMIXM:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">POCO/marble_global/marble:15/AQ3A.241006.001/OS2.0.1.0.VMRMIXM:user/release-keys</string>
 
     <!-- Device model (Build.MODEL) to spoof for netflix -->
     <string name="config_netflixSpoofModel" translatable="false">23049PCD8G</string>
