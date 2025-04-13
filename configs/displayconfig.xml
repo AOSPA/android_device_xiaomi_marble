@@ -28,13 +28,6 @@
             <timeMaxSecs>0</timeMaxSecs>
             <timeMinSecs>0</timeMinSecs>
         </timing>
-        <!--Refresh rate limitation when the device is in HBM -->
-        <!-- <refreshRate>
-            <minimum>0</minimum>
-            <maximum>0</maximum>
-        </refreshRate> -->
-        <!-- Thermal limitation for HBM -->
-        <thermalStatusLimit>critical</thermalStatusLimit>
         <!-- Low power mode limitation for HBM -->
         <allowInLowPowerMode>false</allowInLowPowerMode>
         <minimumHdrPercentOfScreen>0</minimumHdrPercentOfScreen>
@@ -51,5 +44,24 @@
     </highBrightnessMode>
     <ambientLightHorizonLong>3000</ambientLightHorizonLong>
     <ambientLightHorizonShort>1000</ambientLightHorizonShort>
+    <!-- Thermal throttling -->
+    <thermalThrottling>
+        <!-- Brightness throttling -->
+        <brightnessThrottlingMap>
+            <brightnessThrottlingPoint>
+                <thermalStatus>severe</thermalStatus>
+                <!-- Throttling to 500 nits (HBM off) -->
+                <brightness>0.499938</brightness>
+            </brightnessThrottlingPoint>
+        </brightnessThrottlingMap>
+        <!-- Refresh rate throttling -->
+        <refreshRateThrottlingPoint>
+            <thermalStatus>critical</thermalStatus>
+            <refreshRateRange>
+                <minimum>0</minimum>
+                <maximum>60</maximum>
+            </refreshRateRange>
+        </refreshRateThrottlingPoint>
+    </thermalThrottling>
 </displayConfiguration>
 <!-- END Adapt_MIUIAdaptFrame-->
