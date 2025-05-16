@@ -1,4 +1,4 @@
-# Device proprietary files - from marble OS2.0.5.0.VMRCNXM package, unless pinned
+# Device proprietary files - from marble OS2.0.4.0.VMRMIXM package, unless pinned
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
