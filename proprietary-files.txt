@@ -207,8 +207,8 @@ vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml
 vendor/lib64/camera/libQnnHtp.so
 vendor/lib64/camera/libQnnHtpPrepare.so
-vendor/lib64/camera/libQnnHtpV69.so
-vendor/lib64/camera/libQnnHtpV69Skel.so
+vendor/lib64/camera/libQnnHtpV69.so:vendor/lib/rfsa/adsp/libQnnHtpV69.so
+vendor/lib64/camera/libQnnHtpV69Skel.so:vendor/lib/rfsa/adsp/libQnnHtpV69Skel.so
 vendor/lib64/camera/libQnnHtpV69Stub.so
 vendor/lib64/camx.device@3.2-impl.so
 vendor/lib64/camx.device@3.3-impl.so
