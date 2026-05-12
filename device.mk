@@ -50,7 +50,8 @@ PRODUCT_COPY_FILES += \
 TARGET_NFC_SKU := marble
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.nfc.camera.pause_polling=true
+    persist.nfc.camera.pause_polling=true \
+    persist.nfc_cfg.config_file_name=libnfc-nci.conf
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
