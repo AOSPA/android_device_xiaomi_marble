@@ -8,6 +8,9 @@
 # Inherit from sm8450-common
 $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 
+# Audio
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+
 # Camera
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=marble_global
