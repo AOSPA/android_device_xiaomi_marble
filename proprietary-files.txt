@@ -272,7 +272,6 @@ vendor/lib64/libarcsoft_mf_superresolution.so
 vendor/lib64/libarcsoft_qnnhtp.so
 vendor/lib64/libarcsoft_super_night_detection.so
 vendor/lib64/libarcsoft_super_night_raw.so
-vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libarcsoft_zoom_high_dynamic_range.so
 vendor/lib64/libbeauty_face_interface.so
 vendor/lib64/libbitmlengine.so
